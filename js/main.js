@@ -36,13 +36,32 @@ var chufeng = window.chufeng || {};
 		        }
 		    });
 		},
+		openVedio: function () {
+			$('.modal_backdrop, .modal_video').removeClass('hidden');
+		},
+		closeVedio: function () {
+			$('.modal_backdrop, .modal_video').addClass('hidden');
+		},
 		swiperInit: function () {
 			chufeng.swiperGameInit();
 			chufeng.swiperImgInit();
 		}
 	};
 
-	chufeng.swiperInit();
+	$('.video_btn').on('click', function () {
+		chufeng.openVedio();
+	});
+	$('.modal_close').on('click', function () {
+		chufeng.closeVedio();
+	});
+	$('.download_entry').on('click', function () {
+		$(this).closest('.game_center_item').find('.download_wrap').removeClass('hidden');
+	});
+	$('.download_wrap').on('click', function () {
+		$(this).addClass('hidden');
+	});
+
+	
 })();
 
 
