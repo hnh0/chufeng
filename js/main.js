@@ -36,10 +36,10 @@ var chufeng = window.chufeng || {};
 		        }
 		    });
 		},
-		openVedio: function () {
+		openVideo: function () {
 			$('.modal_backdrop, .modal_video').removeClass('hidden');
 		},
-		closeVedio: function () {
+		closeVideo: function () {
 			$('.modal_backdrop, .modal_video').addClass('hidden');
 		},
 		swiperInit: function () {
@@ -49,10 +49,10 @@ var chufeng = window.chufeng || {};
 	};
 
 	$('.video_btn').on('click', function () {
-		chufeng.openVedio();
+		chufeng.openVideo();
 	});
 	$('.modal_close').on('click', function () {
-		chufeng.closeVedio();
+		chufeng.closeVideo();
 	});
 	$('.download_entry').on('click', function () {
 		$(this).closest('.game_center_item').find('.download_wrap').removeClass('hidden');
