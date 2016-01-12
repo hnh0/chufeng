@@ -54,6 +54,9 @@ header{
 	font-size: 14px;
 	text-decoration: none;
 }
+.nav_list .nav_item:hover{
+	opacity: 0.6;
+}
 .nav .game_list{
 	float: left;
 	width: 270px;
