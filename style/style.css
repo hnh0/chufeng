@@ -351,7 +351,7 @@ header{
 	cursor: pointer;
 }
 .game_center{
-	padding:50px 0 60px 0;
+	padding:50px 0 30px 0;
 }
 .game_title{
 	padding: 0 30px;
@@ -389,6 +389,22 @@ header{
 }
 .game_center_item:last-child{
 	margin-right: 0;
+}
+.game_page{
+	text-align: center;
+	margin-top: 30px;
+
+}
+.game_page a{
+	color: #7e7e7e;
+}
+.game_page b{
+	color: #7e7e7e;
+	font-weight: normal;
+	padding:0 5px 0 7px;
+}
+.game_page a.cur{
+	color: #1860c2;
 }
 .download_wrap{
 	position: absolute;
